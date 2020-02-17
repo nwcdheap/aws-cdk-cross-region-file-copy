@@ -4,6 +4,7 @@
 建议测试过程中使用此方案，生产环境使用请自行考虑评估。 当您对方案需要进一步的沟通和反馈后，可以联系 nwcd_labs@nwcdcloud.cn 获得更进一步的支持。 欢迎联系参与方案共建和提交方案需求, 也欢迎在 github 项目issue中留言反馈bugs。
 
 
+## 方案概况
 现在，越来越多的中国公司，在AWS海外区域部署业务。利用 S3 作为数据湖，存储海量的数据，包括图片、视频、日志、备份等等。很多场景下，需要把海外的 
 S3 数据复制到中国，在中国进行进一步分析处理。AWS  S3 在海外提供跨区域自动复制功能 (Cross region replication, CRR) 。由于中国和
 海外区域隔离，不能使用CRR功能。但是通过Lambda和S3的multipart upload接口，我们可以轻松实现跨区域拷贝。请参阅博客文章[分布式 Lambda 从海外到中国自动同步S3文件](http://coolsearch.s3-website-us-east-1.amazonaws.com/ "分布式 Lambda 从海外到中国自动同步S3文件")
